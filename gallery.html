@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,63 +10,26 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-page="gallery">
-
 <nav class="site-nav">
   <a href="index.html" class="nav-logo">
     <div class="nav-brand"><h2>NABA Villanova</h2><p>Student Chapter · Villanova University</p></div>
   </a>
-  <ul class="nav-links">
-    <li><a href="index.html" data-page="home">Home</a></li>
-    <li><a href="events.html" data-page="events">Events</a></li>
-    <li><a href="membership.html" data-page="membership">Membership</a></li>
-    <li><a href="leadership.html" data-page="leadership">Leadership</a></li>
-    <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
-    <li><a href="excellence.html" data-page="excellence">Excellence</a></li>
-  </ul>
+  <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links"><li><a href="index.html" data-page="home">Home</a></li><li><a href="events.html" data-page="events">Events</a></li><li><a href="membership.html" data-page="membership">Membership</a></li><li><a href="leadership.html" data-page="leadership">Leadership</a></li><li><a href="gallery.html" data-page="gallery">Gallery</a></li><li><a href="excellence.html" data-page="accolades">Excellence</a></li></ul>
   <a href="membership.html" class="btn btn-gold-fill nav-cta">Become a Member</a>
 </nav>
-
 <main>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="eyebrow">Our Moments</div>
-      <h1>Chapter Gallery</h1>
-      <p>Photos from our events, programs, and community.</p>
-    </div>
-  </section>
-
-  <!-- Carousel -->
-  <section class="carousel-section">
-    <div class="carousel-title">Chapter Highlights</div>
-    <div class="carousel-wrap">
-
-      <div class="carousel-slide active">
-        <img src="assets/gallery/img1.jpg" alt="Chapter photo 1">
+<section class="hero"><div class="hero-content">
+        <div class="eyebrow">Our Moments</div>
+        <h1>Chapter Gallery</h1>
+        <p>Photos from our events, programs, and community.</p>
+        <div class="button-group"></div>
+      </div></section>
+<div class="carousel-section">
+        <div class="carousel-title">Chapter Highlights</div>
+        <div class="carousel-wrap"><div class="carousel-slide active"><img src="assets/gallery/img1.jpg" alt="NABA 2026 National Convention in Las Vegas, Nevada"><div class="carousel-caption">NABA 2026 National Convention in Las Vegas, Nevada</div></div><div class="carousel-slide"><img src="assets/gallery/img2.jpg" alt="5th Annual NABA Symposium at Temple University"><div class="carousel-caption">5th Annual NABA Symposium at Temple University</div></div><div class="carousel-slide"><img src="assets/gallery/img3.jpg" alt="Financial Literacy Event w. Kia Buckner"><div class="carousel-caption">Financial Literacy Event w. Kia Buckner</div></div><button class="carousel-btn prev" onclick="carouselMove(event,-1)">&#8249;</button><button class="carousel-btn next" onclick="carouselMove(event,1)">&#8250;</button><div class="carousel-dots"><div class="carousel-dot active" onclick="carouselGo(event,0)"></div><div class="carousel-dot" onclick="carouselGo(event,1)"></div><div class="carousel-dot" onclick="carouselGo(event,2)"></div></div></div>
       </div>
-
-      <div class="carousel-slide">
-        <img src="assets/gallery/img2.jpg" alt="Chapter photo 2">
-      </div>
-
-      <div class="carousel-slide">
-        <img src="assets/gallery/img3.jpg" alt="Chapter photo 3">
-      </div>
-
-      <button class="carousel-btn prev" onclick="carouselMove(this,-1)" aria-label="Previous">&#8249;</button>
-      <button class="carousel-btn next" onclick="carouselMove(this,1)" aria-label="Next">&#8250;</button>
-
-      <div class="carousel-dots">
-        <span class="carousel-dot active" onclick="carouselGo(this,0)"></span>
-        <span class="carousel-dot" onclick="carouselGo(this,1)"></span>
-        <span class="carousel-dot" onclick="carouselGo(this,2)"></span>
-      </div>
-    </div>
-  </section>
-
 </main>
-
 <footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-col">
@@ -87,19 +50,18 @@
     <div class="footer-col">
       <h3>Connect</h3>
       <div class="footer-links">
-        <a href="https://instagram.com/nabavillanova" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
-        <a href="https://linkedin.com/company/naba-villanova" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
-        <a href="https://www.nabainc.org" target="_blank" rel="noopener noreferrer">🔗 nabainc.org</a>
-        <a href="mailto:naba@villanova.edu">📧 Email Us</a>
+        <a href="https://instagram.com/nabavillanova" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://linkedin.com/company/naba-villanova" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.nabainc.org" target="_blank" rel="noopener noreferrer">nabainc.org</a>
+        <a href="mailto:naba@villanova.edu" target="_blank" rel="noopener noreferrer">Email Us</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
     © 2025 NABA Villanova Chapter. All rights reserved.
-    <div><button class="hidden-edit" onclick="window.location.href='builder/index.html'" aria-label="Edit this site">✎</button></div>
+    <div><button class="hidden-edit" onclick="window.location.href='builder/index.html'" aria-label="Edit this site">&#9998;</button></div>
   </div>
 </footer>
-
 <script src="js/nav.js"></script>
 <script src="js/carousel.js"></script>
 </body>
