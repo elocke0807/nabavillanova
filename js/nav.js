@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Active nav link
   var page = document.body.dataset.page;
   document.querySelectorAll('.nav-links a[data-page]').forEach(function (a) {
     if (a.dataset.page === page) a.classList.add('active');
   });
-
-  // Hamburger toggle
   var hamburger = document.querySelector('.nav-hamburger');
   var navLinks = document.querySelector('.nav-links');
   if (hamburger && navLinks) {
