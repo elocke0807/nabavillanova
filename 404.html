@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found | NABA Villanova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .error-page{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;text-align:center;padding:4rem 2rem;}
+  .error-code{font-family:'Playfair Display',serif;font-size:clamp(4rem,20vw,8rem);font-weight:700;color:var(--gold);line-height:1;margin-bottom:1rem;}
+  .error-page h1{font-size:clamp(1.4rem,5vw,2rem);margin-bottom:1rem;color:var(--dark-text);}
+  .error-page p{font-size:1rem;color:var(--muted-text);max-width:480px;margin:0 auto 2.5rem;}
+  @media(max-width:480px){.error-page{padding:3rem 1.5rem;min-height:50vh;}}
+</style>
+</head>
+<body data-page="">
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-brand"><h2>NABA Villanova</h2><p>Student Chapter · Villanova University</p></div>
+  </a>
+  <button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links"><li><a href="index.html" data-page="home">Home</a></li><li><a href="events.html" data-page="events">Events</a></li><li><a href="membership.html" data-page="membership">Membership</a></li><li><a href="leadership.html" data-page="leadership">Leadership</a></li><li><a href="gallery.html" data-page="gallery">Gallery</a></li><li><a href="excellence.html" data-page="accolades">Excellence</a></li></ul>
+  <a href="membership.html" class="btn btn-gold-fill nav-cta">Become a Member</a>
+</nav>
+<main>
+  <div class="error-page">
+    <div class="error-code">404</div>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or may have been moved.</p>
+    <div class="button-group">
+      <a href="index.html" class="btn btn-gold-fill">Go Home</a>
+      <a href="membership.html" class="btn btn-white-outline">Join NABA</a>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>NABA · NABA Villanova</h3>
+      <p>Building the next generation of Black business leaders at Villanova University.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Pages</h3>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="excellence.html">Excellence</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Connect</h3>
+      <div class="footer-links">
+        <a href="https://instagram.com/nabavillanova" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://linkedin.com/company/naba-villanova" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.nabainc.org" target="_blank" rel="noopener noreferrer">nabainc.org</a>
+        <a href="mailto:naba@villanova.edu" target="_blank" rel="noopener noreferrer">Email Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 NABA Villanova Chapter. All rights reserved.
+    <div><button class="hidden-edit" onclick="window.location.href='builder/index.html'" aria-label="Edit this site">&#9998;</button></div>
+  </div>
+</footer>
+<script src="js/nav.js"></script>
+</body>
+</html>
